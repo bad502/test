@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<style type="text/css">
+		body
+			{
+				background-image:url('background.jpg');
+				background-repeat:no-repeat;
+				background-size: 100%
+			}
+
+	</style>
+</head>
+
+<body onload="BuildGroup();">
+<div class="container">
+<section id="content">
+<form name="tform" onclick="Hide();">
+	<input type=text name="Search" onchange="Searcht();">
+	<select id="MasGroupS" size="1" onclick="Build();"></select>
+	</br>
+	<select id="Masive" size="5" onclick="Select();"></select>
+
+	<div id="Info">
+			Name:</br>Email:</br>Number:
+	</div>
+	<input type="button" onclick="Add();" value="Add">
+	<input type="button" onclick="Del();" value="Delete">
+	<input type="button" onclick="Edit();" value="Edit">
+	<input type="button" onclick="AddGroup();" value="Add Group">
+	<input type="button" onclick="AddToGroup();" value="Add to Group">
+	<input type="button" onclick="DeleteGroup();" value="Delete Group">
+	<table id="Gropadder" class="Hide">
+		<tr>
+		<td>
+			<input type=text id="PoleAdd">
+		</td> 
+		<td>
+			<input type="button" onclick="AddGroupG();" value="Push">
+		</td>
+		</tr>
+	</table>
+
+	<table id="toGropadder" class="Hide">
+		<tr>
+		<td>
+			<select id="MasGroupG" size="1" onchange="AddToGroupG();"></select>
+		</td> 
+		</tr>
+	</table>
+
+
+	<table cellspacing="10" id="Editt" class="Hide">
+		<tr>
+			<td>
+				<input type=text name="EName">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type=text name="EEmail">
+			</td>
+		</tr>	
+		<tr>
+			<td>
+				<input type=text name="ECNumber">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" value="Push" onclick="rEdit();">
+			</td>
+		</tr>
+	</table>
+
+	<table cellspacing="10" id="Addt" class="Hide">
+		<tr>
+			<td>
+				<input type=text name="Name">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type=text name="Email">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type=text name="CNumber">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" value="Push" onclick="Push();">
+			</td>
+		</tr>
+	</table>
+
+</form>
+</section>
+</div>
+<script type="text/javascript" src="untitled.js"></script>
+</body>
+
+</html>
+
+
